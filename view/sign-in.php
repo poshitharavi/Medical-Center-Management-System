@@ -8,7 +8,7 @@
     <title>Sign In | Medical Center</title>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
+    <!-- Style Imports-->
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet"
           type="text/css">
@@ -25,6 +25,7 @@
 
     <!-- Custom Css -->
     <link href="../template/css/style.css" rel="stylesheet">
+<!--    End of Style Imports-->
 </head>
 
 <body class="login-page">
@@ -42,10 +43,10 @@
                 <?php }?>
                 <div class="input-group">
 							<span class="input-group-addon">
-								<i class="material-icons">person</i>
+								<i class="material-icons">email</i>
 							</span>
                     <div class="form-line">
-                        <input type="text" class="form-control" name="username" placeholder="Username" required
+                        <input type="text" class="form-control" name="email" placeholder="Email Address" id="email" required
                                autofocus>
                     </div>
 
@@ -55,7 +56,7 @@
 							<i class="material-icons">lock</i>
 						</span>
                     <div class="form-line">
-                        <input type="password" class="form-control" name="password" placeholder="Password" required>
+                        <input type="password" class="form-control" name="password" placeholder="Password" id="password" required>
                     </div>
                 </div>
                 <div class="row">

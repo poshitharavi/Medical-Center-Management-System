@@ -1,5 +1,5 @@
 <?php
-include "session.php";
+include "util/session.php";
 ?>
 
 <!DOCTYPE html>
@@ -19,29 +19,29 @@ include "session.php";
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="template/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="plugins/node-waves/waves.css" rel="stylesheet"/>
+    <link href="template/plugins/node-waves/waves.css" rel="stylesheet"/>
 
     <!-- Animation Css -->
-    <link href="plugins/animate-css/animate.css" rel="stylesheet"/>
+    <link href="template/plugins/animate-css/animate.css" rel="stylesheet"/>
 
     <!--WaitMe Css-->
-    <link href="plugins/waitme/waitMe.css" rel="stylesheet"/>
+    <link href="template/plugins/waitme/waitMe.css" rel="stylesheet"/>
 
     <!-- JQuery DataTable Css -->
-    <link href="plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="template/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
 
 
     <!-- Morris Chart Css-->
-    <link href="plugins/morrisjs/morris.css" rel="stylesheet"/>
+    <link href="template/plugins/morrisjs/morris.css" rel="stylesheet"/>
 
     <!-- Custom Css -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="template/css/style.css" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link href="css/themes/all-themes.css" rel="stylesheet"/>
+    <link href="template/css/themes/all-themes.css" rel="stylesheet"/>
 </head>
 
 <body class="theme-light-blue">
@@ -73,7 +73,7 @@ include "session.php";
             <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse"
                data-target="#navbar-collapse" aria-expanded="false"></a>
             <a href="javascript:void(0);" class="bars"></a>
-            <a class="navbar-brand" href="index.php">YOGO | Dealer Portal</a>
+            <a class="navbar-brand" href="index.php">Medical Center</a>
         </div>
     </div>
 </nav>
@@ -84,11 +84,11 @@ include "session.php";
         <!-- User Info -->
         <div class="user-info">
             <div class="image">
-                <img src="images/user.png" width="48" height="48" alt="User"/>
+                <img src="template/images/user.png" width="48" height="48" alt="User"/>
             </div>
             <div class="info-container">
                 <div class="name" data-toggle="dropdown" aria-haspopup="true"
-                     aria-expanded="false"><?php echo $_SESSION['agent_name'] ?></div>
+                     aria-expanded="false"><?php echo $_SESSION['user_name'] ?></div>
                 <div class="btn-group user-helper-dropdown">
                     <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                     <ul class="dropdown-menu pull-right">

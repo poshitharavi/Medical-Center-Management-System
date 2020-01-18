@@ -13,8 +13,8 @@ include_once('view/header.php');
                         </div>
                     </div>
                     <div class="body">
-                        <H3 align="center">Welcome <?php echo $_SESSION['agent_name'] ?></H3>
-<h4 align="center">To Dealer Portal</h4>
+                        <H3 align="center">Welcome <?php echo $_SESSION['user_name'] ?></H3>
+<h4 align="center">To Medical Center</h4>
 </div>
 </div>
 </div>
