@@ -131,7 +131,7 @@ include "../util/session.php";
                     </ul>
                 </li>
                 <li>
-                    <a href="new-receipt">
+                    <a href="search.php">
                         <i class="material-icons">note_add</i>
                         <span>Time Schedule</span>
                     </a>
