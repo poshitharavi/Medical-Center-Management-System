@@ -31,7 +31,7 @@ if($stmt = $pdo->prepare($sql)){
         echo json_encode("success");
         exit();
     } else{
-        echo "Something went wrong. Please try again later.";
+        echo json_encode("failed");
     }
 
 // Close statement

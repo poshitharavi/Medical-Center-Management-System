@@ -43,7 +43,7 @@ async function user_Details_Submit(name,email,mobile,password) {
 
     let result = await response.json();
 
-
+    console.log(result);
     if (result === "success"){
         console.log(result);
         alert("You have successfully registered in the system");

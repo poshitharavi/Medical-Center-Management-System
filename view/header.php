@@ -1,5 +1,5 @@
 <?php
-include "util/session.php";
+include "../util/session.php";
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@ include "util/session.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>YOGO| Dealer Portal</title>
+    <title>Medical Center</title>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -19,29 +19,35 @@ include "util/session.php";
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="template/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../template/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="template/plugins/node-waves/waves.css" rel="stylesheet"/>
+    <link href="../template/plugins/node-waves/waves.css" rel="stylesheet"/>
 
     <!-- Animation Css -->
-    <link href="template/plugins/animate-css/animate.css" rel="stylesheet"/>
+    <link href="../template/plugins/animate-css/animate.css" rel="stylesheet"/>
 
     <!--WaitMe Css-->
-    <link href="template/plugins/waitme/waitMe.css" rel="stylesheet"/>
+    <link href="../template/plugins/waitme/waitMe.css" rel="stylesheet"/>
 
     <!-- JQuery DataTable Css -->
-    <link href="template/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="../template/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
 
 
     <!-- Morris Chart Css-->
-    <link href="template/plugins/morrisjs/morris.css" rel="stylesheet"/>
+    <link href="../template/plugins/morrisjs/morris.css" rel="stylesheet"/>
 
     <!-- Custom Css -->
-    <link href="template/css/style.css" rel="stylesheet">
+    <link href="../template/css/style.css" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link href="template/css/themes/all-themes.css" rel="stylesheet"/>
+    <link href="../template/css/themes/all-themes.css" rel="stylesheet"/>
+
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="../template/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+
+    <!-- Bootstrap Select Css -->
+    <link href="../template/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
 </head>
 
 <body class="theme-light-blue">
@@ -84,7 +90,7 @@ include "util/session.php";
         <!-- User Info -->
         <div class="user-info">
             <div class="image">
-                <img src="template/images/user.png" width="48" height="48" alt="User"/>
+                <img src="../template/images/user.png" width="48" height="48" alt="User"/>
             </div>
             <div class="info-container">
                 <div class="name" data-toggle="dropdown" aria-haspopup="true"
@@ -92,9 +98,9 @@ include "util/session.php";
                 <div class="btn-group user-helper-dropdown">
                     <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                     <ul class="dropdown-menu pull-right">
-                        <li><a href="profile"><i class="material-icons">person</i>Profile</a></li>
+                        <li><a href="profile.php"><i class="material-icons">person</i>Profile</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="log-out"><i class="material-icons">input</i>Sign Out</a></li>
+                        <li><a href="log-out.php"><i class="material-icons">input</i>Sign Out</a></li>
                     </ul>
                 </div>
             </div>
@@ -105,40 +111,44 @@ include "util/session.php";
             <ul class="list">
                 <li class="header">MAIN NAVIGATION</li>
                 <!--                <li class="active">-->
-                <a href="index">
+                <a href="/index.php">
                     <i class="material-icons">home</i>
-                    <span>Home</span>
+                    <span>Dashboard</span>
                 </a>
                 <!--                </li>-->
-                <li>
-                    <a href="driver-info">
-                        <i class="material-icons">info</i>
-                        <span>Driver Information</span>
+                <li >
+                    <a href="javascript:void(0);" class="menu-toggle">
+                        <i class="material-icons">assignment</i>
+                        <span>Appointments</span>
                     </a>
+                    <ul class="ml-menu">
+                        <li>
+                            <a href="add-appoinment.php">Create an Appointment</a>
+                        </li>
+                        <li>
+                            <a href="my-appoinments.php">My Appointments</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="new-receipt">
                         <i class="material-icons">note_add</i>
-                        <span>New Receipt</span>
+                        <span>Time Schedule</span>
                     </a>
                 </li>
-                <li>
-                    <a href="receipt-list">
-                        <i class="material-icons">list</i>
-                        <span>Receipt List</span>
+                <li >
+                    <a href="javascript:void(0);" class="menu-toggle">
+                        <i class="material-icons">assignment</i>
+                        <span>Doctors</span>
                     </a>
-                </li>
-                <li>
-                    <a href="oustanding">
-                        <i class="material-icons">cached</i>
-                        <span>Outstanding</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="settlement">
-                        <i class="material-icons">credit_card</i>
-                        <span>Settlement</span>
-                    </a>
+                    <ul class="ml-menu">
+                        <li>
+                            <a href="add-doctor.php">Doctor Registration</a>
+                        </li>
+                        <li>
+                            <a href="doctors.php">Doctors</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -146,7 +156,7 @@ include "util/session.php";
         <!-- Footer -->
         <div class="legal">
             <div class="copyright">
-                &copy; 2019 <a href="javascript:void(0);">YOGO - Dealer Portal</a>.
+                &copy; 2019 <a href="javascript:void(0);">Medical Center</a>.
             </div>
             <div class="version">
                 <b>Version: </b> 1.0.0
