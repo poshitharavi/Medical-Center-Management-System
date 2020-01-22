@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Sign In | Medical Center</title>
+    <title>Sign In | Rapid Cure Doc Book</title>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Style Imports-->
@@ -30,8 +30,8 @@
 
 <body class="login-page">
 <div class="login-box">
-<!--    <img src="yogooriginallogo150x150.png" alt="YOGO" class="img-responsive center-block"/>-->
-    <div class="logo"><a href="javascript:void(0);"><strong>Medical Center</strong></a>
+    <img src="../images/logo.jpeg" alt="YOGO" class="img-responsive center-block"/>
+    <div class="logo"><a href="javascript:void(0);"><strong>Rapid Cure Doc Book</strong></a>
         <small>Health Is The Important</small>
     </div>
     <div class="card">

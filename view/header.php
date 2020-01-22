@@ -9,7 +9,7 @@ include "../util/session.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Medical Center</title>
+    <title>Rapid Cure Doc Book</title>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -50,7 +50,7 @@ include "../util/session.php";
     <link href="../template/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
 </head>
 
-<body class="theme-light-blue">
+<body class="theme-light-green">
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
@@ -79,7 +79,7 @@ include "../util/session.php";
             <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse"
                data-target="#navbar-collapse" aria-expanded="false"></a>
             <a href="javascript:void(0);" class="bars"></a>
-            <a class="navbar-brand" href="index.php">Medical Center</a>
+            <a class="navbar-brand" href="dashboard.php">Rapid Cure Doc Book</a>
         </div>
     </div>
 </nav>
@@ -98,9 +98,7 @@ include "../util/session.php";
                 <div class="btn-group user-helper-dropdown">
                     <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                     <ul class="dropdown-menu pull-right">
-                        <li><a href="profile.php"><i class="material-icons">person</i>Profile</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="log-out.php"><i class="material-icons">input</i>Sign Out</a></li>
+                        <li><a href="sign-out.php"><i class="material-icons">input</i>Sign Out</a></li>
                     </ul>
                 </div>
             </div>
@@ -111,34 +109,26 @@ include "../util/session.php";
             <ul class="list">
                 <li class="header">MAIN NAVIGATION</li>
                 <!--                <li class="active">-->
-                <a href="/index.php">
+                <a href="dashboard.php">
                     <i class="material-icons">home</i>
                     <span>Dashboard</span>
                 </a>
                 <!--                </li>-->
                 <li >
-                    <a href="javascript:void(0);" class="menu-toggle">
+                    <a href="my-appoinments.php">
                         <i class="material-icons">assignment</i>
                         <span>Appointments</span>
                     </a>
-                    <ul class="ml-menu">
-                        <li>
-                            <a href="add-appoinment.php">Create an Appointment</a>
-                        </li>
-                        <li>
-                            <a href="my-appoinments.php">My Appointments</a>
-                        </li>
-                    </ul>
                 </li>
                 <li>
                     <a href="search.php">
-                        <i class="material-icons">note_add</i>
+                        <i class="material-icons">list_alt</i>
                         <span>Time Schedule</span>
                     </a>
                 </li>
                 <li >
                     <a href="javascript:void(0);" class="menu-toggle">
-                        <i class="material-icons">assignment</i>
+                        <i class="material-icons">person</i>
                         <span>Doctors</span>
                     </a>
                     <ul class="ml-menu">
@@ -156,7 +146,7 @@ include "../util/session.php";
         <!-- Footer -->
         <div class="legal">
             <div class="copyright">
-                &copy; 2019 <a href="javascript:void(0);">Medical Center</a>.
+                &copy; 2019 <a href="javascript:void(0);">Rapid Cure Doc Book</a>.
             </div>
             <div class="version">
                 <b>Version: </b> 1.0.0

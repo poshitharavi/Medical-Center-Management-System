@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Sign In | Medical Center</title>
+    <title>Sign In | Rapid Cure Doc Book</title>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Style Imports-->
@@ -30,7 +30,7 @@
 <body class="signup-page">
 <div class="signup-box">
     <div class="logo">
-        <a href="javascript:void(0);"> Medical Center</a>
+        <a href="javascript:void(0);"> Rapid Cure Doc Book</a>
     </div>
     <div class="card">
         <div class="body">
