@@ -1,3 +1,0 @@
-INSERT INTO `medical_center_management_system`.`user_type` (`useTypeDis`) VALUES ('Patient');
-
-
