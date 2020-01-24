@@ -3,7 +3,7 @@
 require_once '../database/connection.php';
 
 //insert statement
-$sql = "  SELECT doctor.docorName, doctor.doctorContactNumber, doctor.doctorQualifications, shedule.doctorSheduleWeek, shedule.doctorSheduleTime,	doctor.doctorChanellingHospital, shedule.doctorSheduleChanelCategory
+$sql = "  SELECT doctor.docorName, doctor.doctorContactNumber, doctor.doctorQualifications, doctor.doctorID, shedule.doctorSheduleWeek, shedule.doctorSheduleTime,	doctor.doctorChanellingHospital, shedule.doctorSheduleChanelCategory
  FROM medical_center_management_system.doctors doctor, medical_center_management_system.doctor_shedule shedule
  WHERE doctor.doctorID = shedule.doctorSheduleDoctor;";
 
@@ -16,7 +16,7 @@ if($stmt = $pdo->prepare($sql)){
 
             $output = array();
             foreach ($results as $r) {
-                $o = array($r->docorName, $r->doctorContactNumber, $r->doctorQualifications, $r->doctorSheduleWeek, $r->doctorSheduleTime, $r->doctorChanellingHospital, $r->doctorSheduleChanelCategory);
+                $o = array($r->docorName, $r->doctorContactNumber, $r->doctorQualifications, $r->doctorSheduleWeek, $r->doctorSheduleTime, $r->doctorChanellingHospital, $r->doctorSheduleChanelCategory, $r->doctorID);
                 array_push($output, $o);
             }
             echo json_encode($output);

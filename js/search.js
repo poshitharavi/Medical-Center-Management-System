@@ -21,7 +21,7 @@ window.onload = function () {
 
     $('#doctorsTable tbody').on( 'click', 'button', function () {
         var data = doctorsTable.row( $(this).parents('tr') ).data();
-        window.location.href = "add-appoinment.php?sheduleId="+data[6]+"&doctorName="+data[1]+"&category="+data[0]
+        window.location.href = "add-appoinment.php?sheduleId="+data[6]+"&doctorName="+data[1]+"&category="+data[0];
     } );
 
 };

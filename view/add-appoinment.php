@@ -12,7 +12,7 @@ include_once('header.php');
                         </h2>
                     </div>
                     <div class="body">
-                        <form id="appointmentForm">
+                        <form id="appointmentForm" >
                             <div class="row clearfix" hidden>
                                 <div class="col-sm-12">
                                     <label for="email_address">Shedule ID</label>

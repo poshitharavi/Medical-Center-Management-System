@@ -13,10 +13,11 @@ $userDataResult = get_user_details_by_email($pdo,$data['email']);
 
 if ($userDataResult != false){
 
-   if($userDataResult['userPassword'] == $data['password']){
+   if($userDataResult['userPassword'] == md5($data['password'])){
 
        $_SESSION["user_id"] = $userDataResult["userID"];
        $_SESSION["user_name"] = $userDataResult["userName"];
+       $_SESSION["user_type"] = $userDataResult["userType"];
 
        echo json_encode("success");
    }else{
@@ -28,6 +29,7 @@ if ($userDataResult != false){
     echo json_encode("invalid");
 }
 
+//function of geting user details in sign in
 function get_user_details_by_email($pdo,$email)
 {
 

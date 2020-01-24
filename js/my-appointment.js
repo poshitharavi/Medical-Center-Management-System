@@ -10,11 +10,13 @@ window.onload = function () {
 
     getData();
 
+
     $('#appointmentstable tbody').on( 'click', 'button', function () {
         var data = appointmentstable.row( $(this).parents('tr') ).data();
         delete_Appointment(data[0]);
     } );
 };
+
 
 function getData() {
 
@@ -75,6 +77,6 @@ async function delete_Appointment(id) {
     if (result === "success"){
         console.log(result);
         alert("Your appointment is been deleted");
-        window.location.replace("add-doctor.php");
+        window.location.replace("my-appoinments.php");
     }
 }

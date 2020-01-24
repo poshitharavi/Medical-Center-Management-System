@@ -21,7 +21,7 @@ if($stmt = $pdo->prepare($sql)){
     // Set parameters
     $paramName = $data['name'];
     $paramEmail = $data['email'];
-    $paramPassword = $data['password'];
+    $paramPassword = md5($data['password']);
     $paramMobile = $data['mobile'];
     $paramType = 1;// the type is 1 because it is the patient category
 

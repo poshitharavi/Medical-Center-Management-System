@@ -2297,7 +2297,7 @@
   .demo-choose-skin .green {
     background-color: #4CAF50; }
   .demo-choose-skin .light-green {
-    background-color: #8BC34A; }
+    background-color: #4fb953; }
   .demo-choose-skin .lime {
     background-color: #CDDC39; }
   .demo-choose-skin .yellow {
@@ -3578,7 +3578,7 @@ section.content {
 
 [type="checkbox"].filled-in:checked.chk-col-light-green + label:after {
   border: 2px solid #8BC34A;
-  background-color: #8BC34A; }
+  background-color: #4fb953; }
 
 [type="checkbox"].filled-in:checked.chk-col-lime + label:after {
   border: 2px solid #CDDC39;
@@ -3675,7 +3675,7 @@ section.content {
   border-color: #4CAF50; }
 
 [type="radio"].radio-col-light-green:checked + label:after {
-  background-color: #8BC34A;
+  background-color: #4fb953;
   border-color: #8BC34A; }
 
 [type="radio"].radio-col-lime:checked + label:after {
@@ -3792,7 +3792,7 @@ section.content {
   border: 2px solid #8BC34A; }
 
 [type="radio"].with-gap.radio-col-light-green:checked + label:after {
-  background-color: #8BC34A;
+  background-color: #4fb953;
   border: 2px solid #8BC34A; }
 
 [type="radio"].with-gap.radio-col-lime:checked + label:before {
@@ -3936,7 +3936,7 @@ section.content {
   .switch label input[type=checkbox]:checked + .lever.switch-col-light-green {
     background-color: rgba(139, 195, 74, 0.5); }
     .switch label input[type=checkbox]:checked + .lever.switch-col-light-green:after {
-      background-color: #8BC34A; }
+      background-color: #4fb953; }
   .switch label input[type=checkbox]:checked:not(:disabled) ~ .lever.switch-col-lime:active:after {
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(205, 220, 57, 0.1); }
   .switch label input[type=checkbox]:checked + .lever.switch-col-lime {
@@ -4421,7 +4421,7 @@ section.content {
         background-color: rgba(0, 0, 0, 0.12); }
 
 .modal-col-light-green {
-  background-color: #8BC34A; }
+  background-color: #4fb953; }
   .modal-col-light-green .modal-body,
   .modal-col-light-green .modal-title {
     color: #fff !important; }
@@ -4890,7 +4890,7 @@ section.content {
 
 .full-body .panel-col-light-green .panel-body {
   border-top-color: #fff !important;
-  background-color: #8BC34A;
+  background-color: #4fb953;
   color: #fff; }
 
 .full-body .panel-col-lime .panel-body {
@@ -5756,11 +5756,11 @@ fieldset[disabled] .form-control {
   stroke: #8BC34A; }
 
 .list-group .list-group-bg-light-green {
-  background-color: #8BC34A;
+  background-color: #4fb953;
   border: none;
   color: #fff; }
   .list-group .list-group-bg-light-green:hover, .list-group .list-group-bg-light-green:focus {
-    background-color: #8BC34A;
+    background-color: #4fb953;
     color: #fff;
     opacity: 0.8; }
 
@@ -7777,7 +7777,7 @@ fieldset[disabled] .form-control {
   .login-page .login-box a {
     font-size: 14px;
     text-decoration: none;
-    color: #00BCD4; }
+    color: #4fb953; }
   .login-page .login-box .logo {
     margin-bottom: 20px; }
     .login-page .login-box .logo a {
@@ -7795,7 +7795,7 @@ fieldset[disabled] .form-control {
 
 /* Sign Up Page ================================ */
 .signup-page {
-  background-color: #00BCD4;
+  background-color: #4fb953;
   padding-left: 0;
   max-width: 360px;
   margin: 5% auto;
@@ -7807,7 +7807,7 @@ fieldset[disabled] .form-control {
   .signup-page .signup-box a {
     font-size: 14px;
     text-decoration: none;
-    color: #00BCD4; }
+    color: #4fb953; }
   .signup-page .signup-box .logo {
     margin-bottom: 20px; }
     .signup-page .signup-box .logo a {
@@ -7825,7 +7825,7 @@ fieldset[disabled] .form-control {
 
 /* Forgot Password Page ======================== */
 .fp-page {
-  background-color: #00BCD4;
+  background-color: #4fb953;
   padding-left: 0;
   max-width: 360px;
   margin: 5% auto;
@@ -7837,7 +7837,7 @@ fieldset[disabled] .form-control {
   .fp-page .fp-box a {
     font-size: 14px;
     text-decoration: none;
-    color: #00BCD4; }
+    color: #4fb953; }
   .fp-page .fp-box .logo {
     margin-bottom: 20px; }
     .fp-page .fp-box .logo a {

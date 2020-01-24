@@ -30,7 +30,7 @@ if($stmt = $pdo->prepare($sql)){
     // Attempt to execute the prepared statement
     if($stmt->execute()){
         // Records created successfully. Redirect to landing page
-        $lastID = $pdo->lastInsertId();//get the doctor last id inserted
+        $lastID = $pdo->lastInsertId();//get the APPOINTMENT last id inserted
         echo json_encode(array('message' => "success", 'number' => $lastID));
         exit();
     } else{

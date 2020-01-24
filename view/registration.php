@@ -29,8 +29,9 @@
 </head>
 <body class="signup-page">
 <div class="signup-box">
-    <div class="logo">
-        <a href="javascript:void(0);"> Rapid Cure Doc Book</a>
+    <img src="../images/logo.jpeg" alt="YOGO" class="img-responsive center-block"/>
+    <div class="logo"><a href="javascript:void(0);"><strong>Rapid Cure Doc Book</strong></a>
+        <small>Health Is The Important</small>
     </div>
     <div class="card">
         <div class="body">

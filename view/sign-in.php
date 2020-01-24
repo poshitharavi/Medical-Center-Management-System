@@ -36,7 +36,7 @@
     </div>
     <div class="card">
         <div class="body">
-            <form id="sign_in" method="post" >
+            <form id="sign_in" method="post">
                 <div class="msg">Sign in to start your session</div>
                 <?php if (isset($_GET['error'])){ ?>
                 <p class="font-bold col-red msg">User Name or Password is Incorrect</p>
@@ -65,6 +65,9 @@
                     </div>
                     <div class="col-xs-4">
                         <button class="btn btn-block bg-pink waves-effect" type="submit">SIGN IN</button>
+                    </div>
+                    <div class="m-t-25 m-b--5 align-center">
+                        <a href="registration.php">Register Now</a>
                     </div>
                 </div>
             </form>

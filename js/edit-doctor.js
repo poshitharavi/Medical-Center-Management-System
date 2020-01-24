@@ -5,6 +5,7 @@ window.onload = function () {
         event.preventDefault();
 
         //getting the textbox values to variables
+        let id = document.getElementById("doctorId").value;
         let name = document.getElementById("doctorName").value;
         let channellingHospital = document.getElementById("doctorChannellingPlace").value;
         let channelingCategory = document.getElementById("channellingCategory").value;
@@ -15,14 +16,15 @@ window.onload = function () {
 
         //checking entered passwords match
 
-        doctor_details_submit(name, channellingHospital, channelingCategory, availableTime, availableDay,professionalQualification,contactNumber);
-            
+        doctor_details_submit(id, name, channellingHospital, channelingCategory, availableTime, availableDay,professionalQualification,contactNumber);
+
 
     });
 
-    async function doctor_details_submit(name, channellingHospital, channelingCategory, availableTime, availableDay,professionalQualification,contactNumber) {
+    async function doctor_details_submit(id,name, channellingHospital, channelingCategory, availableTime, availableDay,professionalQualification,contactNumber) {
 
         let user = {
+            id:id,
             name: name,
             channellingHospital: channellingHospital,
             channelingCategory: channelingCategory,
@@ -32,7 +34,7 @@ window.onload = function () {
             contactNumber:contactNumber
         };
 
-        let response = await fetch('../service/add-doctor-submit.php', {
+        let response = await fetch('../service/edit-doctor-details.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'
@@ -41,11 +43,12 @@ window.onload = function () {
         });
 
         let result = await response.json();
+        console.log(result);
 
         if (result === "Success"){
             console.log(result);
-            alert("Doctor is been successfully registered");
-            window.location.replace("dashboard.php");
+            alert("Doctor is been successfully updated");
+            window.location.replace("manage-doctor.php");
         }
     }
 

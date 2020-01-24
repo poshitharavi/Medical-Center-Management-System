@@ -6,7 +6,7 @@ require_once '../database/connection.php';
 $sql = "SELECT appointment.appointmentID, appointment.appointmentDateTime, shedule.doctorSheduleChanelCategory, shedule.doctorSheduleWeek, shedule.doctorSheduleTime, doctor.docorName
 FROM medical_center_management_system.appointments appointment, medical_center_management_system.doctor_shedule shedule
 INNER JOIN  medical_center_management_system.doctors doctor on doctor.doctorID = shedule.doctorSheduleDoctor 
-WHERE appointment.appointmentUser = '1' AND appointment.appointmentShedule = shedule.doctorSheduleID;";
+WHERE appointment.appointmentUser = ".$_SESSION["user_id"]." AND appointment.appointmentShedule = shedule.doctorSheduleID;";
 
 if($stmt = $pdo->prepare($sql)){
 

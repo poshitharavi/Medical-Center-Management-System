@@ -48,8 +48,15 @@ include "../util/session.php";
 
     <!-- Bootstrap Select Css -->
     <link href="../template/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
-</head>
 
+    <style>
+        .hide{
+            display:none;
+        }
+    </style>
+
+
+</head>
 <body class="theme-light-green">
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
@@ -79,7 +86,7 @@ include "../util/session.php";
             <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse"
                data-target="#navbar-collapse" aria-expanded="false"></a>
             <a href="javascript:void(0);" class="bars"></a>
-            <a class="navbar-brand" href="dashboard.php">Rapid Cure Doc Book</a>
+            <a class="navbar-brand" href="dashboard.php" style="font-size: 25px"><strong>Rapid Cure Doc Book</strong></a>
         </div>
     </div>
 </nav>
@@ -98,6 +105,8 @@ include "../util/session.php";
                 <div class="btn-group user-helper-dropdown">
                     <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                     <ul class="dropdown-menu pull-right">
+                        <li><a href="profile.php"><i class="material-icons">person</i>Profile</a></li>
+                        <li role="separator" class="divider"></li>
                         <li><a href="sign-out.php"><i class="material-icons">input</i>Sign Out</a></li>
                     </ul>
                 </div>
@@ -111,7 +120,7 @@ include "../util/session.php";
                 <!--                <li class="active">-->
                 <a href="dashboard.php">
                     <i class="material-icons">home</i>
-                    <span>Dashboard</span>
+                    <span>Home</span>
                 </a>
                 <!--                </li>-->
                 <li >
@@ -132,11 +141,15 @@ include "../util/session.php";
                         <span>Doctors</span>
                     </a>
                     <ul class="ml-menu">
+
                         <li>
+                            <a href="doctors.php" >Doctors</a>
+                        </li>
+                        <li <?php if($_SESSION["user_type"] != 2)echo 'class = "hide"';?>>
                             <a href="add-doctor.php">Doctor Registration</a>
                         </li>
-                        <li>
-                            <a href="doctors.php">Doctors</a>
+                        <li <?php if($_SESSION["user_type"] != 2)echo 'class = "hide"';?>>
+                            <a href="manage-doctor.php" >Manage Doctors</a>
                         </li>
                     </ul>
                 </li>
