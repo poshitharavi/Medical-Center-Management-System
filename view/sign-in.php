@@ -69,6 +69,9 @@
                     <div class="m-t-25 m-b--5 align-center">
                         <a href="registration.php">Register Now</a>
                     </div>
+                    <div class="m-t-25 m-b--5 align-center">
+                        <a href="shedules.php">Check Our Shedule</a>
+                    </div>
                 </div>
             </form>
         </div>

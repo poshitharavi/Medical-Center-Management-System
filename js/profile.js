@@ -38,7 +38,7 @@ async function change_Password(password) {
     //check the status
     if (result === "Success"){
         console.log(result);
-        alert("Doctor is been successfully registered");
+        alert("Password Changed Successfully");
         window.location.replace("dashboard.php");
     }
 }
