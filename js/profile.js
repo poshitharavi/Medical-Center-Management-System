@@ -18,13 +18,13 @@ window.onload = function () {
     });
 
 };
-
+//function uses to call the change password.php
 async function change_Password(password) {
-
+    //javascript array
     let user = {
         password: password,
     };
-
+    //fetch request to change password.php
     let response = await fetch('../service/change-password.php', {
         method: 'POST',
         headers: {
@@ -32,9 +32,10 @@ async function change_Password(password) {
         },
         body: JSON.stringify(user)
     });
-
+    //response
     let result = await response.json();
     console.log(result);
+    //check the status
     if (result === "Success"){
         console.log(result);
         alert("Doctor is been successfully registered");

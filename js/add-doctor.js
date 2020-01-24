@@ -20,8 +20,10 @@ window.onload = function () {
 
     });
 
+    //function of calling the add-doctor-submit.php file in service (Passing the doctor details)
     async function doctor_details_submit(name, channellingHospital, channelingCategory, availableTime, availableDay,professionalQualification,contactNumber) {
 
+        //setting values to the javascript array
         let user = {
             name: name,
             channellingHospital: channellingHospital,
@@ -32,6 +34,7 @@ window.onload = function () {
             contactNumber:contactNumber
         };
 
+        //fetch request calling add-doctor-submit.php
         let response = await fetch('../service/add-doctor-submit.php', {
             method: 'POST',
             headers: {
@@ -40,8 +43,10 @@ window.onload = function () {
             body: JSON.stringify(user)
         });
 
+        //response of the request
         let result = await response.json();
 
+        //checking the status is success
         if (result === "Success"){
             console.log(result);
             alert("Doctor is been successfully registered");
@@ -49,7 +54,7 @@ window.onload = function () {
         }
     }
 
-
+    //inilizing the date time picker
     $('.timepicker').bootstrapMaterialDatePicker({
         format: 'HH:mm',
         clearButton: true,

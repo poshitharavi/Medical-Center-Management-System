@@ -23,16 +23,16 @@ window.onload = function () {
     });
 };
 
-
+//pass the user details filled in the form
 async function user_Details_Submit(name,email,mobile,password) {
-
+    //javascript array
     let user = {
         name: name,
         email: email,
         password: password,
         mobile: mobile
     };
-
+    //fetch request pass to add paitent.php
     let response = await fetch('../service/add-paitents.php', {
         method: 'POST',
         headers: {
@@ -40,10 +40,10 @@ async function user_Details_Submit(name,email,mobile,password) {
         },
         body: JSON.stringify(user)
     });
-
+    //response
     let result = await response.json();
-
     console.log(result);
+    //check the status
     if (result === "success"){
         console.log(result);
         alert("You have successfully registered in the system");

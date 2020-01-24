@@ -67,6 +67,24 @@ include_once('header.php');
                                                 <option value="">-- Please select --</option>
                                                 <option value="Cardiology">Cardiology</option>
                                                 <option value="OPD">OPD</option>
+                                                <option value="Allergist / Immunologist">Allergist / Immunologist</option>
+                                                <option value="Cardiologist">Cardiologist</option>
+                                                <option value="Dental Surgeon">Dental Surgeon</option>
+                                                <option value="Dermatalogist">Dermatalogist</option>
+                                                <option value="Endocrinologist">Endocrinologist</option>
+                                                <option value="Gynocologist">Gynocologist</option>
+                                                <option value="Nephronologist">Nephronologist</option>
+                                                <option value="Neurologist">Neurologist</option>
+                                                <option value="Oncologist">Oncologist</option>
+                                                <option value="Opthalmologist">Opthalmologist</option>
+                                                <option value="Orthopedist">Orthopedist</option>
+                                                <option value="Pediatrician">Pediatrician</option>
+                                                <option value="Podiatrist">Podiatrist</option>
+                                                <option value="Pulmonologist">Pulmonologist</option>
+                                                <option value="Psychiatrist">Psychiatrist</option>
+                                                <option value="Rheumtalogist">Rheumtalogist</option>
+                                                <option value="Surgeon">Surgeon</option>
+                                                <option value="Visiting Physician">Visiting Physician</option>
                                             </select>
                                         </div>
                                     </div>

@@ -14,15 +14,16 @@ window.onload = function () {
         let professionalQualification = document.getElementById("doctorProfessionalQualification").value;
         let contactNumber = document.getElementById("doctorContactNumber").value;
 
-        //checking entered passwords match
-
+        //submiting the enterd values of doctor
         doctor_details_submit(id, name, channellingHospital, channelingCategory, availableTime, availableDay,professionalQualification,contactNumber);
 
 
     });
 
+    //function caling the edit-doctor-details.php
     async function doctor_details_submit(id,name, channellingHospital, channelingCategory, availableTime, availableDay,professionalQualification,contactNumber) {
 
+        //initilizing the javascript array
         let user = {
             id:id,
             name: name,
@@ -34,6 +35,7 @@ window.onload = function () {
             contactNumber:contactNumber
         };
 
+        //fetch request
         let response = await fetch('../service/edit-doctor-details.php', {
             method: 'POST',
             headers: {
@@ -42,9 +44,11 @@ window.onload = function () {
             body: JSON.stringify(user)
         });
 
+        //response
         let result = await response.json();
         console.log(result);
 
+        //checking the success status
         if (result === "Success"){
             console.log(result);
             alert("Doctor is been successfully updated");
